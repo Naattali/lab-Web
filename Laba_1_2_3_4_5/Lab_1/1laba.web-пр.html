@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <style>
+        table {
+        width: 100%;
+        height: 800px;
+        background: white;
+        color: white;
+        border-spacing: 1px;
+        }
+        td, th{
+        background: Salmon;
+        padding: 2px;
+        }
+        td {
+        border: 5px solid FireBrick;
+        }
+        .center {
+        text-align: center;
+  .bold-text {
+   color: black;
+    font-weight: bold;
+  }
+        }
+         .small-img {
+    width: 150px;
+    height: auto;
+  }
+        .width {
+        text-align: justify;
+   display: inline-block;
+            width: 100%;
+    list-style-type: none;
+     padding: 0;
+        }
+        .ol {
+        list-style-type: none;
+        counter-reset: item;
+        }
+        .ol0 {
+        list-style-type: none;
+        counter-reset: item;
+        }
+        .li:before {
+        content: counter(item) ') ';
+        counter-increment: item;
+        }
+        .li0:before {
+        content: counter(item, lower-alpha) ') ';
+        counter-increment: item;
+        }
+
+    </style>
+</head>
+<body>
+
+<table border="3">
+    <tr>
+        <td colspan="2" rowspan="3" style="font-size: 20px; " class="center" width="100px">
+            <div style="display: flex; align-items: center;">
+                <span><b>Крош</b></span>
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/a194752aa4e9b1cc304f80b8e92e8d68/960" alt="Катинка2" class="small-img">
+        </div></td>
+        <td colspan="2" style="font-size: 20px;"> <b>Ежик</b> </td>
+        <td rowspan="4"> <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/1362954/c3b60485921ae7b08ce6d6eee6d060aa/960" alt="Катинка3" style="width: 300px; height: auto" class="center"> </td>
+        <td style="font-size: 20px; border-right: 5px solid black; border-bottom: 5px solid black"> <b>Лосяш</b> </td>
+    </tr>
+    <tr>
+        <td style="font-size: 12px;">Ежик — настоящий гик и домосед. Он увлекается техникой, коллекционированием и кактусами.
+            Редко может отказать своим друзьям, поэтому под их влиянием попадает в передряги.
+            В отличие от Бараша, который страдает на публику, Ежик страдает молча.</td>
+        <td rowspan="2" style="font-size: 12px;"> <p>Лосяш</p> Всезнайка и айтишник, старающийся во всем использовать научный подход.
+            У Лосяша непростое прошлое: он был не очень приятным типом, а еще создал собственного клона, который долгие годы его преследовал. <p>И</p>
+            <p style="font-stretch: condensed; color: rgb(139, 0, 0)">Повзрослев, Лосяш угомонился и стал спокойным лосем.
+            Проводит время за работой, чтением книг, житейскими спорами, игрой в домино и рыбалкой с Копатычем.
+            Часто работает над изобретениями с Пином.</p> </td>
+        <td rowspan="3" style="border-right: 5px; border-right: 5px solid black; border-bottom: 5px solid black; border-top: 5px solid black">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/92f8073c87618841c47c1adf163e1b16/960"
+                              alt="Катинка1" style="width: 300px; height: auto;"> </td>
+    </tr>
+    <tr>
+        <td style="font-size: 12px;"> В одной из серий он ужасно испугался и провалился в колодец, выполняя Нюшино задание в игре с фантами.
+            В другом эпизоде Ежик сломал себе палец при подготовке к Олимпиаде, в которой решил принять участие под давлением приятелей.
+            Еще у Ежика часто случаются панические атаки. </td>
+    </tr>
+    <tr>
+       <td style="background-color: IndianRed;">
+<!-- <ul>-->
+<!--            <li>Он частенько чудит. Ходить на ушах в прямом смысле и превращаться в кролика-невидимку — в порядке вещей.</li>-->
+<!--                <li>Питает слабость к морковке, которую специально для него выращивает Копатыч.</li>-->
+<!--            <li> Одно время был сторонником теории заговора — считал, что долину Смешариков окружают невидимые враги,-->
+<!--                поэтому включал режим обороны в духе «Парня-каратиста», и верил, что Земля плоская.</li>-->
+<!--        </ul> -->
+           <ol style="font-weight: bold" type="I">
+               <li><h style="border-bottom: 2px solid DarkRed">Персонаж</h>
+                   <ol style="position: relative; left: -20px;" type="A">
+                       <li>Крош
+                           <ol type="1" class="ol">
+                               <li class="li">Активный</li>
+                               <li class="li">Спортивный</li>
+                               <li class="li">Частенько чудит</li>
+                           </ol>
+                       </li>
+                       <li>Ежик
+                           <ol  class="ol0">
+                               <li class="li0">Тихий</li>
+                               <li class="li0">Аккуратный</li>
+                           </ol>
+                       </li>
+                       <li>Лосяш
+                           <ol id="table_13" class="ol">
+                               <li class="li">Интеллигентный</li>
+                               <li class="li">Умный</li>
+                               <li class="li">Спокойный</li>
+                           </ol>
+                       </li>
+                   </ol>
+               </li>
+               <li><h style="border-bottom: 2px solid DarkRed; font-weight: bold">Девочки-смешарики</h>
+                   <ol style="position: relative; left: -20px" type="A">
+                       <li>Совунья
+                           <ol style="font-weight: normal;">
+                               <li style="position: relative; left: -40px">Сторонник ЗОЖ</li>
+                               <li style="position: relative; left: -40px">Не сова, а жаворонок</li>
+                               <li style="position: relative; left: -40px">Единственный доктор</li>
+                           </ol>
+                       </li>
+                       <li>Нюша
+                           <div style="font-weight: normal;">
+                               <p style="position: relative; left: -20px">Модная маленькая свинка</p>
+                               <p style="position: relative; left: -20px">Халерик</p>
+                           </div>
+                       </li>
+                   </ol>
+               </li>
+           </ol>
+</td>
+        <td style="Impact, fantasy; color: DarkRed"> Гиперактивный кролик, втягивающий своих друзей в авантюры. Однажды он угнал ракету Пина и застрял в ней в космосе
+            (почти как Тони Старк в последних «Мстителях»!). А в другой серии Крош попытался сорвать предвыборную кампанию Нюши,
+            пририсовав ей на плакате усы и челку Гитлера.
+            Также вместе с лучшим другом Ежиком отправился в город-хоррор Омск. Но, несмотря на безалаберность, вспыльчивость и сложный характер,
+            Крош — кролик с большими амбициями и хороший друг, готовый поддержать других героев и поднять им настроение в любой момент. </td>
+<!--        <td>-->
+<!--            <ol>-->
+<!--                <li>Он очень интеллигентный и скромный.</li>-->
+<!--                <li> Каждое утро проверяет свое самочувствие, соблюдает распорядок, занимается спортом и ест овощи.Сверните на Виноградную</li>-->
+<!--                <li>Иногда страдает от паранойи. Единственный из Смешариков подозревает, что живет не в реальном мире, а в мультфильме.</li>-->
+<!--            </ol>-->
+<!--            </td>-->
+<!--        <td>-->
+        <td>
+            <em>Ёжик (характеристика)</em>
+            <ul class="width">
+                <li>- Он очень интеллигентный и скромный.</li>
+                <li>- Каждое утро проверяет свое самочувствие, соблюдает распорядок, занимается спортом и ест овощи.</li>
+                <li>- Иногда страдает от паранойи. Единственный из Смешариков подозревает, что живет не в реальном мире, а в мультфильме.</li>
+            </ul>
+        </td>
+
+<!--                    <ol reversed>-->
+<!--                <li>Несмотря на любовь к науке и свою рациональность, увлекается эзотерикой. Составил гороскоп Барашу. Также верит в приметы.</li>-->
+<!--                <li>Гедонист и эстет. Любит еду и искусство.</li>-->
+<!--                <li>В одной из серий Лосяш решил, что он бабочка.</li>-->
+<!--            </ol>-->
+            <td>
+                <ol>
+                <li>Дом Лосяша<ol>
+                    <li><a href="https://losyash-library.fandom.com/ru/wiki/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%9B%D0%BE%D1%81%D1%8F%D1%88%D0%B0" target="_blank">Лаборатория</a></li>
+                    <li><a href="https://losyash-library.fandom.com/ru/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0" target="_blank">Библиотека</a></li>
+                    <li><a href="https://losyash-library.fandom.com/ru/wiki/%D0%94%D0%BE%D0%BC%D0%B8%D0%BA_%D0%9B%D0%BE%D1%81%D1%8F%D1%88%D0%B0" target="_blank">Подвал</a></li>
+                </ol></li>
+<!--                <li>Дом Кроша<ul>-->
+<!--                    <li>Подвал</li>-->
+<!--                    <li>Железная дорога (игрушечная)</li>-->
+<!--                    <li>Много ящиков с морковкой</li>-->
+<!--                </ul></li>-->
+                <li>Дом Ёжика<ul>
+                    <li>Порядок</li>
+                    <li>Горшки с кактусами, грибами и ракушками</li>
+                    <li>Много книг на полках</li>
+                </ul></li>
+            </ol>
+        </td>
+    </tr>
+    <div style="font-size: 30px"><b>Таблица 1</b></div>
+</table>
+
+</body>
+</html>

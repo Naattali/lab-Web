@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вставка текста</title>
+    <link rel="stylesheet" href="laba3.css" />
+</head>
+<body>
+<header>Смешарики</header>
+
+<div class="main">
+    <nav>
+        <div style="text-align: center">
+        <p>Лосяш</p>
+        <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/92f8073c87618841c47c1adf163e1b16/960"
+             alt="Катинка1" style="width: 150px; height: auto;">
+            </div>
+    </nav>
+
+    <section>
+        <header>Форма</header>
+        <article>
+            <div class="form-block">
+                <div id="inputContainer">
+                    <input type="text" id="textInput" placeholder="Введите текст" />
+                </div>
+                <select id="styleSelect">
+                    <option value="font-size:small;color:green;">Маленький, зелёный</option>
+                    <option value="font-size:medium;color:blue;">Средний, синий</option>
+                    <option value="font-size:large;color:red;">Большой, красный</option>
+                </select>
+                <textarea id="mainText" rows="5" cols="40">Текст</textarea>
+                <div class="buttons">
+                    <button onclick="insertText('before')">Before</button>
+                    <button onclick="insertText('after')">After</button>
+<!--                    <button onclick="openWindow()">Показать в новом окне</button>-->
+                    <button onclick="cloneInput()">Добавить поле</button>
+                    <button onclick="removeInput()">Удалить поле</button>
+                </div>
+            </div>
+        </article>
+        <footer>вот и все</footer>
+    </section>
+
+    <aside>
+        <div style="text-align: center">
+        <p>Крош</p>
+        <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/a194752aa4e9b1cc304f80b8e92e8d68/960" alt="Катинка2" style="width: 150px; height: auto;">
+        </div>
+    </aside>
+</div>
+
+<footer>до новых встреч</footer>
+
+<script src="../../laba3.js"></script>
+</body>
+</html>

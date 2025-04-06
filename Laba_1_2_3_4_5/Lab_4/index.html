@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <link rel="stylesheet" href="style4.css">
+
+</head>
+<body>
+<header>
+    <img src="resource/image.png" width="320" height="180">
+</header>
+<div style="display: flex; width: 100%; flex-wrap: wrap;">
+
+    <article>
+        <form style="display: flexbox;  text-align: left" id="form1">
+            <fieldset>
+                <legend>Имя:</legend>
+                <input type="text" id="name" required name="name" /><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Телефон:</legend>
+                <input type="tel" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="77-55-22" id="tele" name="tele"><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Почта:</legend>
+                <input type="email" id="email" required name="email" /><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Какие жанры телепередач нравятся?</legend>
+                <div>
+                    <input type="checkbox" id="f" name="interest" value="f" />
+                    <label for="f">Жанры информационной публицистики</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="s" name="interest" value="s" />
+                    <label for="s">Жанры аналитической публицистики</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="t" name="interest" value="t" />
+                    <label for="t">Жанры художественной публицистики</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Дата рождения:</legend>
+                <input type="date" id="birth" name="birth">
+            </fieldset>
+
+            <fieldset>
+                <legend>Смотрели Смешариков?</legend>
+                <div>
+                    <input type="radio" id="yes" name="rate" value="yes" checked />
+                    <label for="yes">Да</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="no" name="rate" value="no" />
+                    <label for="no">Нет</label>
+                </div>
+            </fieldset>
+
+            <input id="submit" type="submit" value="Отправить">
+            <input id="clear" type="submit" value="Очистить форму">
+        </form>
+    </article>
+    <div style="width: 10%; text-align: center; background-color: rgb(209, 2, 250, 0.5)">
+        <h3>Главная</h3>
+    </div>
+    <div style="width: 10%; text-align: center; background-color: rgb(209, 2, 250, 0.3);">
+        <a style="text-decoration: none" href="result.html"><h3>Результаты</h3></a>
+    </div>
+</div>
+<footer>
+    <h5 style="margin: 0px">Смешарики</h5>
+    <h4 style="margin: 10px">Опрос пользователя по его предпочтениям телепередач</h4>
+    <h5 style="margin: 10px">Смешарики</h5>
+</footer>
+</body>
+<script src="myScript.js"></script>
+</html>
+

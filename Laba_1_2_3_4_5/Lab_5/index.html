@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+<div class="input-fields">
+    <input type="number" id="input-id" placeholder="ID">
+    <input type="text" id="input-name" placeholder="ФИО">
+    <input type="text" id="input-phone" placeholder="Номер телефона">
+    <input type="text" id="input-address" placeholder="Адрес">
+    <select id="input-debt">
+        <option value="0">Нет задолженности</option>
+        <option value="1">Есть задолженность</option>
+    </select>
+</div>
+
+    <div class="buttons">
+        <p id="button1" class="hover_mouse-check_button" onclick="clearForm()">Очистить форму</p>
+        <p id="button2" class="hover_mouse-check_button" onclick="deleteRecord()">Удалить запись с выбранным ID</p>
+        <p id="button3" class="hover_mouse-check_button" onclick="showAllRecords()">Показать все записи в виде таблицы</p>
+        <p id="button4" class="hover_mouse-check_button" onclick="showDebtors()">Вывести все ФИО с задолженностями</p>
+        <p id="button5" class="hover_mouse-check_button" onclick="addRecord()">Добавить запись</p>
+
+    </div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>ФИО</th>
+        <th>Номер телефона</th>
+        <th>Адрес</th>
+        <th>Признак задолженности по оплате</th>
+    </tr>
+    </thead>
+    <tbody id="results"></tbody>
+</table>
+<script src="template.js"></script>
+</body>
+</html>

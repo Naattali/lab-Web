@@ -1,0 +1,53 @@
+header{
+background-color: #e861d2;
+text-align: center;
+height: 180px;
+}
+
+form{
+background-color: rgb(247, 242, 247, 0.3);
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('resource/back1.png');
+    background-repeat: no-repeat;
+    resize: vertical;
+    overflow: auto;
+}
+
+h3{
+color: #fa02fa;
+}
+
+.nav{
+background-color: rgb(2, 193, 250, 0.4);
+}
+
+footer{
+text-align: center;
+display: block;
+height: 80px; width: 100%;
+background-color: #e861d2;
+border-spacing: 0;
+}
+
+th, td {
+    border: 2px solid pink;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(247, 242, 247, 0.4);
+}
+
+th {
+    color: #fa02fa;
+    background-color: white;
+}
+
+td:hover {
+    background-color: #e026c1;
+    color: white;
+}

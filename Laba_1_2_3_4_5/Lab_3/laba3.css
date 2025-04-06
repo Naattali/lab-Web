@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url('back.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header, nav, section, article, aside, footer {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #EC407A; /* ярко-розовый */
+}
+
+nav {
+  background-color: #FFECB3; /* нежно-жёлтый */
+}
+
+section {
+  background-color: #C8E6C9; /* светло-зелёный */
+}
+
+aside {
+  background-color: #BBDEFB; /* небесно-голубой */
+}
+
+footer {
+  text-align: center;
+  background-color: #D1C4E9; /* сиреневый */
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "nav section aside";
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #90CAF9;
+}
+
+.buttons button {
+  margin: 5px 2px;
+  padding: 8px 12px;
+  background-color: #FFB74D;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #FFA726;
+}

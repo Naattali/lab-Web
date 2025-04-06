@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link rel="stylesheet" href="style4.css">
+
+</head>
+<body>
+
+<header>
+    <img src="resource/image.png" width="320" height="180">
+</header>
+<div style="display: flex; flex-wrap: wrap;">
+    <div class="nav" style="width: 10%; text-align: center">
+        <h3>Опрос</h3>
+    </div>
+    <article>
+        <h2>Результаты:</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Телефон</th>
+                <th>Почта</th>
+                <th>Жанры информационной публицистики</th>
+                <th>Жанры аналитической публицистики</th>
+                <th>Жанры художественной публицистики</th>
+                <th>День рождения</th>
+                <th>Смотрели смешариков</th>
+            </tr>
+            </thead>
+            <tbody id="results"></tbody>
+        </table>
+
+        <p>Имена респондентов:</p>
+        <input list="names" >
+        <datalist id="names">
+        </datalist>
+    </article>
+    <div class="nav" style="width: 10%; text-align: center">
+        <a style="text-decoration: none" href="index.html"><h3>Назад</h3></a>
+    </div>
+</div>
+<footer>
+    <h5 style="margin: 0px">Смешарики</h5>
+    <h4 style="margin: 10px">Результат опроса пользователя по его предпочтениям телепередач</h4>
+    <h5 style="margin: 10px">Смешарики</h5>
+</footer>
+<script src="myScript2.js"></script>
+
+</body>
+</html>
