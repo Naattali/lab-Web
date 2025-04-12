@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" href="style5.css">
+    <title>Лаба пирвеб5 с Допом</title>
+    <script src="template.js"></script>
 </head>
 <body>
 <div class="input-fields">
@@ -12,19 +13,18 @@
     <input type="text" id="input-phone" placeholder="Номер телефона">
     <input type="text" id="input-address" placeholder="Адрес">
     <select id="input-debt">
-        <option value="0">Нет задолженности</option>
-        <option value="1">Есть задолженность</option>
+        <option value="false">Нет задолженности</option>
+        <option value="true">Есть задолженность</option>
     </select>
 </div>
 
-    <div class="buttons">
-        <p id="button1" class="hover_mouse-check_button" onclick="clearForm()">Очистить форму</p>
-        <p id="button2" class="hover_mouse-check_button" onclick="deleteRecord()">Удалить запись с выбранным ID</p>
-        <p id="button3" class="hover_mouse-check_button" onclick="showAllRecords()">Показать все записи в виде таблицы</p>
-        <p id="button4" class="hover_mouse-check_button" onclick="showDebtors()">Вывести все ФИО с задолженностями</p>
-        <p id="button5" class="hover_mouse-check_button" onclick="addRecord()">Добавить запись</p>
-
-    </div>
+<div class="buttons">
+    <button class="hover_mouse-check_button" onclick="clearForm()">Очистить форму</button>
+    <button class="hover_mouse-check_button" onclick="deleteRecord()">Удалить запись</button>
+    <button class="hover_mouse-check_button" onclick="showAllRecords()">Показать все</button>
+    <button class="hover_mouse-check_button" onclick="showDebtors()">Показать должников</button>
+    <button class="hover_mouse-check_button" onclick="addRecord()">Добавить запись</button>
+</div>
 <table>
     <thead>
     <tr>
@@ -32,11 +32,16 @@
         <th>ФИО</th>
         <th>Номер телефона</th>
         <th>Адрес</th>
-        <th>Признак задолженности по оплате</th>
+        <th>Долг</th>
     </tr>
     </thead>
     <tbody id="results"></tbody>
 </table>
-<script src="template.js"></script>
+
+<div class="history">
+    <h3>История изменений</h3>
+    <div id="history-log"></div>
+</div>
+
 </body>
 </html>
