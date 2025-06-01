@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Массив 10x10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор и сортировщик массива 10x10</h1>
+        
+        <div class="controls">
+            <button id="generate">Сгенерировать массив</button>
+            
+            <div class="format-control">
+                <label for="decimalPlaces">Знаков после запятой:</label>
+                <select id="decimalPlaces">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <button id="sortAsc">Сортировать по возрастанию</button>
+            <button id="sortDesc">Сортировать по убыванию</button>
+            <button id="loadOriginal">Загрузить исходный</button>
+            <button id="loadSorted">Загрузить отсортированный</button>
+        </div>
+        
+        <div class="array-container">
+            <h2>Исходный массив</h2>
+            <div id="originalArray" class="array-table"></div>
+        </div>
+        
+        <div class="array-container">
+            <h2>Отсортированный массив</h2>
+            <div id="sortedArray" class="array-table"></div>
+        </div>
+    </div>
+</body>
+</html>
