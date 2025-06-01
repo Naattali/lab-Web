@@ -79,7 +79,7 @@ img{
 }
 
 .control-group button {
-    background-color: #4CAF50;
+    background-color: #894caf;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -89,5 +89,5 @@ img{
 }
 
 .control-group button:hover {
-    background-color: #45a049;
+    background-color: #a36ec4;
 }
