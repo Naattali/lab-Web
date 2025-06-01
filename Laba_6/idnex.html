@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свежие новости</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Свежие новости</h1>
+        <div id="news-container" class="news-container"></div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <h3>Добавить новость</h3>
+                <textarea id="news-text" placeholder="Введите текст вашей новости"></textarea>
+                <select id="news-position">
+                    <option value="before-first">Перед первой новостью</option>
+                    <option value="after-first">После первой новости</option>
+                    <option value="after-last" selected>После последней новости</option>
+                </select>
+                <button id="add-news-btn">Добавить новость</button>
+            </div>
+            
+            <div class="control-group">
+                <h3>Добавить изображение</h3>
+                <input type="text" id="image-url" placeholder="URL изображения">
+                <select id="image-position">
+                    <option value="before-first">Перед первым изображением</option>
+                    <option value="after-last" selected>После последнего изображения</option>
+                </select>
+                <button id="add-image-btn">Добавить изображение</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="resources/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

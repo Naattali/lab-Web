@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создай свою новость из составляющих</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Создай свою новость из составляющих</h1>
+        
+        <div class="controls">
+            <div class="control-panel">
+                <h2>Создать новый блок</h2>
+                
+                <div class="form-group">
+                    <label for="block-title">Заголовок:</label>
+                    <select id="block-title" class="form-control">
+                        <option value="Новости">Новости</option>
+                        <option value="Наука">Наука</option>
+                        <option value="Реальная жизнь">Реальная жизнь</option>
+                        <option value="Путешествия">Путешествия</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="block-image">Изображение:</label>
+                    <select id="block-image" class="form-control">
+                        <option value="resources/images/БарашКороль.png">Бараш</option>
+                        <option value="resources/images/КарКарыч моряк.png">Кар-Карыч</option>
+                        <option value="resources/images/Крош с мороженым.png">Крош</option>
+                        <option value="resources/images/Совунья врач.png">Совунья</option>
+                        <option value="resources/images/Копатыч с лейкой.png">Копатыч</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="block-content">Содержимое:</label>
+                    <select id="block-content" class="form-control">
+                        <option value="Срочные новости, новым королем Смешариков стал Бараш!">У Смешариков новый король?</option>
+                        <option value="Нынче отправиться в кругосветку не так уж и сложно, Кар-Карыч тому пример!">Кто из шариков отправился в кругосветку?</option>
+                        <option value="Как там в песне Барбариков, оса просто хочет познакомиться, а вовсе не ужалить (или попросить мороженко)">Хочет ужалить или просто сладкоежка?</option>
+                        <option value="Все то же зелье от Ежика Совунья вовсе не рекомендует, лечить то в итоге ей прошлось">Врачебное мнение на супер-зелье</option>
+                        <option value="Просто Копатыч с лейкой">Простая жизнь</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="block-width">Ширина:</label>
+                    <select id="block-width" class="form-control">
+                        <option value="200px">200px</option>
+                        <option value="300px">300px</option>
+                        <option value="400px" selected>400px</option>
+                        <option value="500px">500px</option>
+                        <option value="600px">600px</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="block-height">Высота:</label>
+                    <select id="block-height" class="form-control">
+                        <option value="200px">200px</option>
+                        <option value="300px" selected>300px</option>
+                        <option value="400px">400px</option>
+                        <option value="500px">500px</option>
+                        <option value="600px">600px</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="block-margin">Отступ:</label>
+                    <select id="block-margin" class="form-control">
+                        <option value="10px">10px</option>
+                        <option value="20px" selected>20px</option>
+                        <option value="30px">30px</option>
+                        <option value="40px">40px</option>
+                        <option value="50px">50px</option>
+                    </select>
+                </div>
+                
+                <button id="create-block-btn" class="btn">Создать блок</button>
+            </div>
+        </div>
+        
+        <div id="blocks-container" class="blocks-container"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

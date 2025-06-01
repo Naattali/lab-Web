@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие песни в одном месте</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="player">
+            <h1>Лучшие песни в одном месте!</h1>
+            <div class="controls">
+                <div class="input-group">
+                    <label for="interval">Интервал между песнями (сек):</label>
+                    <input type="number" id="interval" min="5" max="60" value="10">
+                </div>
+                <div class="buttons">
+                    <button id="start-btn" class="btn start">Начать воспроизведение</button>
+                    <button id="stop-btn" class="btn stop">Остановить</button>
+                </div>
+            </div>
+            <div class="now-playing">
+                <div id="song-info" class="song-info">Готов к воспроизведению</div>
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>Плейлист</h2>
+                <ul id="playlist">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
